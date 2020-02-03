@@ -1,0 +1,12 @@
+language: cpp
+sudo: required
+os:
+    - linux
+
+services:
+    - docker
+
+script:
+  - cd minsky 
+  - sh smokeTest.sh minsky
+  - sh smokeTest.sh minsky-beta
