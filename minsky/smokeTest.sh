@@ -14,7 +14,7 @@ for i in Dockerfile-*[^~]; do
     else
         echo "$i FAILED" >$i.log
         let $[fail++]
-    fi &
+    fi 
 done
 wait
 docker container prune -f
